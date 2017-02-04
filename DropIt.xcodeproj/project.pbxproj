@@ -14,6 +14,7 @@
 		830EFA3C1E4613E7004474A2 /* DropItView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830EFA3B1E4613E7004474A2 /* DropItView.swift */; };
 		830EFA3E1E46140B004474A2 /* DropItViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830EFA3D1E46140B004474A2 /* DropItViewController.swift */; };
 		830EFA401E46153D004474A2 /* UIKit Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830EFA3F1E46153D004474A2 /* UIKit Extensions.swift */; };
+		830EFA421E461A61004474A2 /* FallingObjectBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830EFA411E461A61004474A2 /* FallingObjectBehavior.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		830EFA3B1E4613E7004474A2 /* DropItView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropItView.swift; sourceTree = "<group>"; };
 		830EFA3D1E46140B004474A2 /* DropItViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropItViewController.swift; sourceTree = "<group>"; };
 		830EFA3F1E46153D004474A2 /* UIKit Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIKit Extensions.swift"; sourceTree = "<group>"; };
+		830EFA411E461A61004474A2 /* FallingObjectBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FallingObjectBehavior.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				830EFA3B1E4613E7004474A2 /* DropItView.swift */,
 				830EFA3D1E46140B004474A2 /* DropItViewController.swift */,
 				830EFA3F1E46153D004474A2 /* UIKit Extensions.swift */,
+				830EFA411E461A61004474A2 /* FallingObjectBehavior.swift */,
 				830EFA3A1E4613B7004474A2 /* Supporting Files */,
 				830EFA2C1E46138F004474A2 /* Main.storyboard */,
 			);
@@ -153,6 +156,7 @@
 			files = (
 				830EFA3E1E46140B004474A2 /* DropItViewController.swift in Sources */,
 				830EFA3C1E4613E7004474A2 /* DropItView.swift in Sources */,
+				830EFA421E461A61004474A2 /* FallingObjectBehavior.swift in Sources */,
 				830EFA291E46138F004474A2 /* AppDelegate.swift in Sources */,
 				830EFA401E46153D004474A2 /* UIKit Extensions.swift in Sources */,
 			);
