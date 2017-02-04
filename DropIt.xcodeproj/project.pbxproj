@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		830EFA291E46138F004474A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830EFA281E46138F004474A2 /* AppDelegate.swift */; };
-		830EFA2B1E46138F004474A2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830EFA2A1E46138F004474A2 /* ViewController.swift */; };
 		830EFA2E1E46138F004474A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 830EFA2C1E46138F004474A2 /* Main.storyboard */; };
 		830EFA301E46138F004474A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 830EFA2F1E46138F004474A2 /* Assets.xcassets */; };
 		830EFA331E46138F004474A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 830EFA311E46138F004474A2 /* LaunchScreen.storyboard */; };
+		830EFA3C1E4613E7004474A2 /* DropItView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830EFA3B1E4613E7004474A2 /* DropItView.swift */; };
+		830EFA3E1E46140B004474A2 /* DropItViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830EFA3D1E46140B004474A2 /* DropItViewController.swift */; };
+		830EFA401E46153D004474A2 /* UIKit Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830EFA3F1E46153D004474A2 /* UIKit Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		830EFA251E46138F004474A2 /* DropIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DropIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		830EFA281E46138F004474A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		830EFA2A1E46138F004474A2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		830EFA2D1E46138F004474A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		830EFA2F1E46138F004474A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		830EFA321E46138F004474A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		830EFA341E46138F004474A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		830EFA3B1E4613E7004474A2 /* DropItView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropItView.swift; sourceTree = "<group>"; };
+		830EFA3D1E46140B004474A2 /* DropItViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropItViewController.swift; sourceTree = "<group>"; };
+		830EFA3F1E46153D004474A2 /* UIKit Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIKit Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,24 @@
 		830EFA271E46138F004474A2 /* DropIt */ = {
 			isa = PBXGroup;
 			children = (
-				830EFA281E46138F004474A2 /* AppDelegate.swift */,
-				830EFA2A1E46138F004474A2 /* ViewController.swift */,
+				830EFA3B1E4613E7004474A2 /* DropItView.swift */,
+				830EFA3D1E46140B004474A2 /* DropItViewController.swift */,
+				830EFA3F1E46153D004474A2 /* UIKit Extensions.swift */,
+				830EFA3A1E4613B7004474A2 /* Supporting Files */,
 				830EFA2C1E46138F004474A2 /* Main.storyboard */,
+			);
+			path = DropIt;
+			sourceTree = "<group>";
+		};
+		830EFA3A1E4613B7004474A2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				830EFA281E46138F004474A2 /* AppDelegate.swift */,
 				830EFA2F1E46138F004474A2 /* Assets.xcassets */,
 				830EFA311E46138F004474A2 /* LaunchScreen.storyboard */,
 				830EFA341E46138F004474A2 /* Info.plist */,
 			);
-			path = DropIt;
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +151,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				830EFA2B1E46138F004474A2 /* ViewController.swift in Sources */,
+				830EFA3E1E46140B004474A2 /* DropItViewController.swift in Sources */,
+				830EFA3C1E4613E7004474A2 /* DropItView.swift in Sources */,
 				830EFA291E46138F004474A2 /* AppDelegate.swift in Sources */,
+				830EFA401E46153D004474A2 /* UIKit Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
