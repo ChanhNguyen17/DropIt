@@ -24,6 +24,7 @@ class DropItViewController: UIViewController {
                     action: #selector(DropItView.grabDrop(recognizer:))
                 )
             )
+            gameView.realGravity = true
         }
     }
     
