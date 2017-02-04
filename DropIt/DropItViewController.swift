@@ -18,6 +18,12 @@ class DropItViewController: UIViewController {
                     action: #selector(addDrop(_:))
                 )
             )
+            gameView.addGestureRecognizer(
+                UIPanGestureRecognizer(
+                    target: gameView,
+                    action: #selector(DropItView.grabDrop(recognizer:))
+                )
+            )
         }
     }
     
