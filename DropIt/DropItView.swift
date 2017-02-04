@@ -8,9 +8,13 @@
 
 import UIKit
 
-class DropItView: UIView {
+class DropItView: UIView, UIDynamicAnimatorDelegate {
 
-    private lazy var animator: UIDynamicAnimator = UIDynamicAnimator(referenceView: self)
+    private lazy var animator: UIDynamicAnimator = {
+        let animator = UIDynamicAnimator(referenceView: self)
+        animator.delegate = self
+        return animator
+    }()
     
     private let dropBehavior = FallingObjectBehavior()
     
@@ -21,6 +25,42 @@ class DropItView: UIView {
             } else {
                 animator.removeBehavior(dropBehavior)
             }
+        }
+    }
+    
+    // MARK: Remove Completed Row
+    
+    func dynamicAnimatorDidPause(_ animator: UIDynamicAnimator) {
+        removeCompletedRow()
+    }
+    
+    fileprivate func removeCompletedRow()
+    {
+        var dropsToRemove = [UIView]()
+        
+        var hitTestRect = CGRect(origin: bounds.lowerLeft, size: dropSize)
+        repeat {
+            hitTestRect.origin.x = bounds.minX
+            hitTestRect.origin.y -= dropSize.height
+            var dropsTested = 0
+            var dropsFound = [UIView]()
+            while dropsTested < dropsPerRow {
+                if let hitView = hitTest(hitTestRect.mid), hitView.superview == self {
+                    dropsFound.append(hitView)
+                } else {
+                    break
+                }
+                hitTestRect.origin.x += dropSize.width
+                dropsTested += 1
+            }
+            if dropsTested == dropsPerRow {
+                dropsToRemove += dropsFound
+            }
+        } while dropsToRemove.count == 0 && hitTestRect.origin.y > bounds.minY
+        
+        for drop in dropsToRemove {
+            dropBehavior.removeItem(drop)
+            drop.removeFromSuperview()
         }
     }
     
